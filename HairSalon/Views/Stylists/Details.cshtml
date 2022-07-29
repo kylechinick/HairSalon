@@ -2,9 +2,15 @@
   Layout = "_Layout";
 }
 
+@using HairSalon.Models;
 @model HairSalon.Models.Stylist
 
 <h2>Stylist Details</h2>
+<h3>Client List</h3>
+@foreach (Client client in Model.Clients)
+{
+  <li>@Html.ActionLink($"{client.Description}", "Details", "Clients", new { id = client.ClientId})</li>
+}
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
 <h2>@Html.DisplayNameFor(model => model.Details): @Html.DisplayFor(model => model.Details)<h3>
