@@ -2,5 +2,8 @@
   Layout = "_Layout";
 }
 
-<h1>HairSalon App</h1>
-<p>@Html.ActionLink("See all clients", "Index", "Clients")</p> <p>@Html.ActionLink("See all stylists", "Index", "Stylists")</p>
+<h1 class="site-hero">HairSalon App</h1>
+<div class="flex flex__row--center full-width full-height">
+<p class="btn btn--hero">@Html.ActionLink("See all clients", "Index", "Clients")</p>
+<p class="btn btn--hero">@Html.ActionLink("See all stylists", "Index", "Stylists")</p>
+</div>
