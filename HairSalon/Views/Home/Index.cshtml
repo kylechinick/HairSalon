@@ -3,7 +3,11 @@
 }
 
 <h1 class="site-hero">HairSalon App</h1>
-<div class="flex flex__row--center full-width full-height">
-<p class="btn btn--hero">@Html.ActionLink("See all clients", "Index", "Clients")</p>
-<p class="btn btn--hero">@Html.ActionLink("See all stylists", "Index", "Stylists")</p>
+<div class="flex flex__row--center" id="hero-btn-container">
+  <div class="btn btn--hero flex flex__row--center">
+    <p>@Html.ActionLink("See all clients", "Index", "Clients")</p>
+  </div>
+  <div class="btn btn--hero flex flex__row--center">
+    <p>@Html.ActionLink("See all stylists", "Index", "Stylists")</p>
+  </div>
 </div>
