@@ -4,12 +4,14 @@
 
 @using HairSalon.Models;
 @model List<HairSalon.Models.Client>;
+@* @model List<HairSalon.Models.Stylist>; *@
 
 <h1>Clients</h1>
 
 @if (@Model.Count == 0)
 {
   <h3>No clients have been added yet!</h3>
+  <p>Clients cannot be created without a stylist. Please create a stylist first in order to proceed with client creation.</p>
 } 
 else
  {
@@ -17,5 +19,5 @@ else
 {
   <li>@Html.ActionLink($"{client.Description}", "Details", new { id = client.ClientId }) | @client.Stylist.Name | @client.PhoneNumber</li>
 }
-}
 <p>@Html.ActionLink("Add new client", "Create")</p>
+}
