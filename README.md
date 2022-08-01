@@ -41,7 +41,10 @@ All records can be edited or deleted.
 4. Create an 'appsettings.json' file in the project root and populate it with the following content, taking care to update with your unique database configurations:
    `{ "ConnectionStrings": { "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR DB NAME];uid=root;pwd=[YOUR PASSWORD];" } }`
 
-NOTE: [first_last] should be replaced with your own database name and [password] should be replaced by your password. Do not include square brackets in final configuration. 5. To start and run the app execute `dotnet run` or, optionally, `dotnet watch run` to start the app and cause it to rebuild and run after each change to the codebase. 6. Optional: in order to test the application's class methods cd into the VendorOrderTracker.Tests folder and execute `dotnet test` in the terminal.
+NOTE: [first_last] should be replaced with your own database name and [password] should be replaced by your password. Do not include square brackets in final configuration.
+
+5. To start and run the app execute `dotnet run` or, optionally, `dotnet watch run` to start the app and cause it to rebuild and run after each change to the codebase.
+6. Optional: in order to test the application's class methods cd into the VendorOrderTracker.Tests folder and execute `dotnet test` in the terminal.
 
 ## Known Bugs
 
